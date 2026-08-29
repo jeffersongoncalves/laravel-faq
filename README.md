@@ -1,10 +1,10 @@
-# Laravel FAQ
-
 <div class="filament-hidden">
 
 ![Laravel FAQ](https://raw.githubusercontent.com/jeffersongoncalves/laravel-faq/main/art/jeffersongoncalves-laravel-faq.png)
 
 </div>
+
+# Laravel FAQ
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/laravel-faq.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-faq)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-faq/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/laravel-faq/actions?query=workflow%3ATests+branch%3Amain)
