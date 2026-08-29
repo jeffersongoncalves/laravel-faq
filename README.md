@@ -26,7 +26,7 @@ A Laravel package for managing FAQs (Frequently Asked Questions), with translata
 ## Requirements
 
 - PHP 8.2+
-- Laravel 11+
+- Laravel 12.x or 13.x
 
 ## Installation
 
