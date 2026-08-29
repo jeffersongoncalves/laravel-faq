@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create(config('faq.table_names.faqs', 'faqs'), function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('faq_category_id')
+                ->nullable()
+                ->constrained(config('faq.table_names.categories', 'faq_categories'))
+                ->nullOnDelete();
+            $table->json('question');
+            $table->json('answer');
+            $table->unsignedInteger('order')->default(0);
+            $table->boolean('is_active')->default(true)->index();
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists(config('faq.table_names.faqs', 'faqs'));
+    }
+};
